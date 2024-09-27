@@ -1,0 +1,15 @@
+{
+	"extends": "@codingame/tsconfig",
+	"compilerOptions": {
+		"target": "ES2023",
+		"module": "esnext",
+		"lib": [
+			"es2023"
+		]
+	},
+	"include": [
+		"./src/**/*",
+		"./tests/**/*",
+		"./jest.config.ts"
+	]
+}

@@ -1,12 +1,12 @@
 {
-  "name": "thenby",
-  "version": "1.3.4",
+  "name": "@codingame/thenby",
+  "version": "1.0.0",
   "description": "Micro library for sorting arrays using the firstBy().thenBy().thenBy() syntax",
-  "main": "thenBy.module.js",
-  "types": "thenBy.module.d.ts",
+  "main": "dist/thenBy.js",
+  "types": "dist/thenBy.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Teun/thenBy.js.git"
+    "url": "git@github.com:CodinGame/thenBy.js.git"
   },
   "keywords": [
     "sort",
@@ -16,30 +16,38 @@
     "multiple"
   ],
   "files": [
-    "thenBy.module.js",
-    "thenBy.module.d.ts",
-    "thenBy.min.js"
+    "dist"
   ],
   "scripts": {
-    "test": "gulp",
-    "build": "gulp build"
+    "test": "jest",
+    "build": "tsc -b tsconfig.build.json"
   },
-  "author": "Teun Duynstee",
+  "type": "module",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/Teun/thenBy.js/issues"
+    "url": "https://github.com/CodinGame/thenBy.js/issues"
   },
-  "homepage": "https://github.com/Teun/thenBy.js",
+  "homepage": "https://github.com/CodinGame/thenBy.js",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "gulp": "^5.0.0",
-    "gulp-insert": "^0.5.0",
-    "gulp-mocha": "^8.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-replace": "^0.5.4",
-    "gulp-uglify": "^3.0.2",
-    "gulp-umd": "^2.0.0",
-    "performance-now": "^0.2.0"
+    "@babel/plugin-transform-modules-commonjs": "^7.24.8",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-typescript": "^7.24.7",
+    "@codingame/eslint-config": "^1.2.1",
+    "@codingame/tsconfig": "^1.1.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-unused-imports": "^3.1.0",
+    "prettier": "^3.3.3",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
   },
-  "dependencies": {}
+  "volta": {
+    "node": "22.4.0",
+    "npm": "10.8.1"
+  }
 }

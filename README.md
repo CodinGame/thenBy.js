@@ -1,7 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-
 - [thenBy.js usage](#thenbyjs-usage)
     - [Sort by property names](#sort-by-property-names)
     - [Sort by unary functions](#sort-by-unary-functions)
@@ -128,32 +124,28 @@ thenBy constructs a comparer function for you. It does this by combining the fun
 If you use thenBy to combine multiple compare functions into one (where each function expects two parameters), the difference is small. Using unary functions adds some overhead, using direction:desc adds some, using only a property name adds a little, but will check for missing values, which could be optimized. Ignoring case will slow down, but not more so than when handcoded.   
 
 ## Installing
-### Install in your HTML
-To include it into your page/project, just paste the minified code from https://raw.github.com/Teun/thenBy.js/master/thenBy.min.js into yours (699 characters). If you don't want the `firstBy` function in your global namespace, you can assign it to a local variable (see sample.htm).
 
 ### Install using npm or yarn
-```npm install thenby```
+```npm install @codingame/thenby```
 
 or
 
-```yarn add thenby```
+```yarn add @codingame/thenby```
 
 then in your app:
 
-```var firstBy = require('thenby');```
+```typescript
+var firstBy = require('@codingame/thenby');
+```
 
 or in TypeScript/ES6:
 
-```import {firstBy} from "thenby";```
-
-For a small demo of how TypeScript support looks in a good editor (i.e. VS Code), [check this short video](https://youtu.be/mKJovFLyxro).
-
-
-Thanks a lot to [bergus](https://github.com/bergus), [hagabaka](https://github.com/hagabaka), [infolyzer](https://github.com/infolyzer) and [Foxhoundn](https://github.com/Foxhoundn) for their improvements.
-Thanks to [jsgoupil](https://github.com/jsgoupil) and [HonoluluHenk](https://github.com/HonoluluHenk) for their help on the TypeScript declaration.
+```typescript
+import { firstBy } from "@codingame/thenby";
+```
 
 
-[npm-image]: https://img.shields.io/npm/v/thenby.svg
-[npm-url]: https://npmjs.org/package/thenby
-[downloads-image]: https://img.shields.io/npm/dm/thenby.svg
-[downloads-url]: https://npmjs.org/package/thenby
+[npm-image]: https://img.shields.io/npm/v/@codingame/thenby.svg
+[npm-url]: https://npmjs.org/package/@codingame/thenby
+[downloads-image]: https://img.shields.io/npm/dm/@codingame/thenby.svg
+[downloads-url]: https://npmjs.org/package/@codingame/thenby
